@@ -55,6 +55,7 @@ body{
     background-color: transparent;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-text{
     color: #443737;
