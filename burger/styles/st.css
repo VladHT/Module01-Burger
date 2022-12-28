@@ -133,7 +133,7 @@ header{
 .title{
     font-weight: 700;
     font-size: 79px;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 19px;
 }
 .desciption {
@@ -142,15 +142,13 @@ header{
     line-height: 1.6;
     color: #FAF9F9;
     max-width: 320px;
-    margin: 0 auto;
+    margin: 0 auto 2px;
 }
 .button-text:hover{
     color: #FFC725;
 }
 .baner{
-    
     margin-top: 140px;
-    
 }
 .container-2{
     background-image: url(../images/baner.png);background-repeat: no-repeat;
@@ -198,4 +196,143 @@ header{
     line-height: 32px;
     text-transform: uppercase;
     border-radius: 5px;
+}
+.shop{
+    display: grid;
+    max-width: 1180px;
+    max-height: 1208px;
+    margin: auto;
+    grid-template-areas:
+        "a b c"
+        "d e f";
+}
+.shop-item{
+    max-width: 380px;
+    max-height: 579px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+.shop-img{
+    max-width: 380px;
+    max-height: 430px;
+
+}
+.shop-sort{
+    display: flex;
+    max-width: 1182px;
+    margin: 66px auto 0px;
+    padding-left: 4px;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+.shop-title{
+    font-weight: 700;
+    font-size: 44px;
+}
+.sort{
+    font-size: 15px;
+    font-weight: 400;
+    max-height: 44px;
+    padding: 4px 30px 0 31px;
+    border-radius: 22px;
+    border: 1px solid;
+    border-color: #DEDEDE;
+    background-color: #fff;
+    margin: 39px 0px 40px 0;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.sort img{
+    padding-left: 106px;
+}
+.main-block{
+    max-width: 1182;
+}
+h3{
+    text-align: center;
+}
+.deckription-of-produckt{
+    margin: 23px 0 0 2px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #1B2A49;
+}
+.deckription-of-produckt span{
+    font-weight: 700;
+    font-size: 20px;
+    color: #979797;
+}
+.shop-text button{
+    margin-top: 17px;
+    margin-left: 114px;
+    background: #FBB731;
+    border-radius: 5px;
+    padding: 11px 36px 6px 27px;
+    border: 1px solid #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+.bye{
+    display: flex;
+    align-items: center;
+}
+.bye p{
+    margin: 0;
+}
+.bye img{
+    padding-right: 12.5px;
+}
+.bye:hover{
+    cursor: pointer;
+}
+.shop-item2{
+    display: grid;
+    max-width: 1180px;
+    max-height: 1208px;
+    margin: auto;
+    grid-template-areas:
+        "a b c"
+        "a b c";
+}
+aside{
+    max-width: 1180px;
+    max-height: 1208px;
+    margin: auto;
+}
+.dop-info{
+    color: #1B2A49;
+    font-weight: 700;
+    font-size: 29px;
+    margin-top: 103px;
+    letter-spacing: 0.4px;
+}
+.shop-img{
+    margin-right: 20px;
+}
+.deckription-of-produckt2{
+    margin: 23px 0 0 2px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #1B2A49;
+    margin-left: -18px;
+}
+.deckription-of-produckt2 span{
+    font-weight: 700;
+    font-size: 20px;
+    color: #979797;
+}
+.niz{
+    display: flex;
+    padding-bottom: 118px;
+    padding-top: 101px;
+    justify-content: flex-start;
+}
+footer{
+    margin-top: 140px;
+    max-width: 100%;
+    background-color: #1E2F40;
+}
+.logo-niz{
+    margin-top: 16px;
+    margin-left: 128px;
 }
