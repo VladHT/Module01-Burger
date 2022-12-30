@@ -233,7 +233,7 @@ header{
     font-size: 15px;
     font-weight: 400;
     max-height: 44px;
-    padding: 4px 30px 0 31px;
+    padding: 3px 154px 0 29px;
     border-radius: 22px;
     border: 1px solid;
     border-color: #DEDEDE;
@@ -241,6 +241,10 @@ header{
     margin: 39px 0px 40px 0;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+    appearance: none;
+    background-image: url(../images/strelka.svg);
+    background-repeat: no-repeat;
+    background-position: 235px 18px;
 }
 .sort img{
     padding-left: 106px;
