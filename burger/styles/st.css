@@ -37,6 +37,8 @@ header{
     list-style-type: none;
     padding-left: 0;
     gap: 46px;
+    margin-top: 18px;
+    margin-bottom: 14px;
 }
 .header-nav a{
     font-weight: 600;
@@ -197,6 +199,11 @@ header{
     text-transform: uppercase;
     border-radius: 5px;
 }
+.baner-link:hover{
+    color: #FBB731;
+    background: transparent;
+    border: solid 1px;
+}
 .shop{
     display: grid;
     max-width: 1180px;
@@ -267,11 +274,11 @@ h3{
     color: #979797;
 }
 .shop-text button{
-    margin-top: 17px;
+    margin-top: 19px;
     margin-left: 114px;
     background: #FBB731;
     border-radius: 5px;
-    padding: 11px 36px 6px 27px;
+    padding: 10px 36px 6px 27px;
     border: 1px solid #fff;
     font-weight: 700;
     font-size: 14px;
@@ -288,6 +295,8 @@ h3{
 }
 .bye:hover{
     cursor: pointer;
+    background: #F37335;
+    border: 1px solid;
 }
 .shop-item2{
     display: grid;
@@ -329,7 +338,7 @@ aside{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding-bottom: 37px;
+    padding-bottom: 89px;
     padding-top: 118px;
     max-width: 1180px;
 }
@@ -348,8 +357,12 @@ footer{
     color: #FFF;
     margin-right: 6px;
 }
-.info-3{
-    color: #FFF;
+.info-3 a{
+    color: #FBB731;
+    text-decoration: none;
+}
+.info-3 :hover{
+    color: white;
 }
 .info-1 > ul{
     font-family: 'Open Sans', sans-serif;
@@ -366,6 +379,9 @@ footer{
     text-transform: none;
     color: #DEDEDE;
 }
+.info-1 a:hover{
+    color: #FBB731;
+}
 .info-1 h2{
     margin-top: 0;
     margin-bottom: 14px;
@@ -375,7 +391,6 @@ footer{
 .info-3 > ul{
     font-weight: 800;
     font-size: 20px;
-    color: #FBB731;
     line-height: 1.91;
     list-style-type: none;
     padding-left: 0;
