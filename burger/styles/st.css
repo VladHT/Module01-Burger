@@ -3,6 +3,12 @@
 body{
     font-family: 'Nunito Sans', sans-serif;
 }
+a{
+    transition: 0.3s;
+}
+button{
+    transition: 0.3s;
+}
 .container{
     max-width: 1180px;
     margin: 0 auto;
@@ -338,7 +344,7 @@ aside{
 .niz{
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: -3px auto;
     padding-bottom: 89px;
     padding-top: 118px;
     max-width: 1180px;
@@ -437,7 +443,29 @@ footer{
     font-size: 15px;
     line-height: 1.5;
 }
-
+.button-up {
+    background-color: #FBB731;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1E2F40;
+    text-decoration: none;
+    padding:5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 1.5s;
+}
+.button-up.hidden{
+    opacity: 0;
+    cursor: default;
+}
+.button-up.visible{
+    opacity: 1;
+}
+.button-up:hover{
+    background-color: #F37335;
+}
 
     /* Second PAGE*/
 
@@ -456,12 +484,17 @@ footer{
         flex: 0 0 580px;
         padding-top: 170px;
         padding-bottom: 170px;
+        
+    }
+    .text a{
+        transition: 0s;
     }
     .text a:hover{
         border: 1px solid;
         color: #FBB731;
         background: transparent;
-        padding-bottom: 18px;
+        padding-bottom: 18.4px;
+        
     }
     .vtoraya h1 {
         font-size: 120px;
@@ -576,3 +609,4 @@ footer{
         margin-bottom: 10px;
         margin-top: 0;
     }
+    

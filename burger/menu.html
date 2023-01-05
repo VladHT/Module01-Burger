@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/st.css">
 </head>
 <body>
-    <header>
+    <header id="hederTop">
         <div class="container">
             <div class="header">
                 <a href="index.html" class="header-logo"></a>
@@ -17,8 +17,8 @@
                     <ul class="header-nav">
                         <li><a href="index.html" >Главная</a></li>
                         <li><a href="#" class="active">Меню</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#contacts" class="cont">О нас</a></li>
+                        <li><a href="#contacts" class="cont">Контакты</a></li>
                     </ul>
                 </nav>
                 <button type="button" class="button">
@@ -206,11 +206,76 @@
             </div>
             <div class="info-3">
                 <ul>
-                    <li><a href="tel:+"> + 7 900 787 13-13</a></li>
+                    <li id="contacts"><a href="tel:+"> + 7 900 787 13-13</a></li>
                     <li><a href="tel:+"> + 7 900 700 14-14</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+    <a href="#hederTop" class="button-up" id="btnUp">Наверх</a>
+    <script>
+
+        // first    (Scrol)
+
+        const links = document.querySelectorAll(".baner-link");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+            function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+        });
+        }
+
+        // second   (Scrol)
+
+        const links2 = document.querySelectorAll(".cont");
+
+        for (const link of links2) {
+            link.addEventListener("click", clickHandler);
+        }
+
+            function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+        });
+        }
+
+        window.onscroll = function(){scrollFunction()};
+
+       const upbuttons = document.querySelectorAll(".button-up");
+
+       for (const upbutton of upbuttons) {
+           upbutton.addEventListener("click", clickHandler);
+       }
+
+       function clickHandler(e) {
+       e.preventDefault();
+       const href = this.getAttribute("href");
+
+       document.querySelector(href).scrollIntoView({
+           behavior: "smooth"
+       });
+       }
+
+    //    thrid (Button UP)
+
+       function scrollFunction(){
+           if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+               document.getElementById('btnUp').className = 'button-up visible';
+           } else {
+               document.getElementById('btnUp').className = 'button-up hidden';
+           }
+       }
+
+    </script>
 </body>
 </html>
