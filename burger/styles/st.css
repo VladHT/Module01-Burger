@@ -163,9 +163,10 @@ header{
     background-size: cover;
     max-width: 1180px;
     margin: 0 auto;
+    background-position: 0 center;
 }
 .baner-box{
-    max-width: 353px;
+    min-width: 330px;
     padding: 66px 727px 113px 100px;
 }
 .baner-title{
@@ -227,8 +228,10 @@ header{
     margin-bottom: 50px;
 }
 .shop-img{
-    max-width: 380px;
-    max-height: 430px;
+    width: 380px;
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 .shop-sort{
@@ -455,6 +458,7 @@ footer{
     bottom: 20px;
     right: 20px;
     transition: 1.5s;
+    border-radius: 100%;
 }
 .button-up.hidden{
     opacity: 0;
@@ -609,4 +613,74 @@ footer{
         margin-bottom: 10px;
         margin-top: 0;
     }
+
+    /* Responsive */
+
+    @media (max-width:1000px){
+        .container{
+            max-width: 923px;
+            margin: 0 15px;
+        }
+        .container-2{
+            max-width: 953px;
+            margin: 0 15px;
+        }
+        .header-logo{
+            width: 150px;
+            height: 48px;
+            background-size: contain;
+        }
+        .header-nav{
+            gap: 22px;
+            padding-left: 45px;
+        }
+        .shop{
+            grid-template: "a b"
+                           "c d"
+                           "e f";
+            max-height: 2046px;
+            max-width: 953px;
+            margin: 34px 15px 89px 15px;
+            justify-content: space-between;
+        }
+        .shop-item{
+            margin-right: 0;
+            max-width: 470px;
+            max-height: 632px;
+        }
+        .shop-img{
+            margin-right: 0;
+            background-position: 0 center;
+            width: 470px;
+            height: 482px;
+        }
+        .baner{
+            margin-top: 72px;
+        }
+        .shop-sort{
+            margin: 44px auto 0;
+            max-width: 949px;
+        }
+        .baner-box{
+            padding: 66px 727px 113px 44px;
+        }
+        .shop-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .shop-text button {
+            margin: 19px auto 0;
+        }
+        .shop-item2{
+            grid-column-gap: 12px;
+        }
+        .dop{
+            margin: 0px 15px;
+        }
+        .deckription-of-produckt2{
+            margin-left: 0;
+        }
+    }
+
     
