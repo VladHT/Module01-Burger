@@ -624,6 +624,7 @@ footer{
         .container-2{
             max-width: 953px;
             margin: 0 15px;
+            background-position: -80px center;
         }
         .header-logo{
             width: 150px;
@@ -633,15 +634,20 @@ footer{
         .header-nav{
             gap: 22px;
             padding-left: 45px;
+            padding-right: 0;
+        }
+        .header-nav li{
+            min-width: 56px;
         }
         .shop{
             grid-template: "a b"
                            "c d"
                            "e f";
             max-height: 2046px;
-            max-width: 953px;
-            margin: 34px 15px 89px 15px;
+            max-width: 768px;
+            margin: 34px 32px 89px 15px;
             justify-content: space-between;
+            grid-column-gap: 15px;
         }
         .shop-item{
             margin-right: 0;
@@ -651,15 +657,19 @@ footer{
         .shop-img{
             margin-right: 0;
             background-position: 0 center;
-            width: 470px;
+            width: 346px;
             height: 482px;
         }
         .baner{
             margin-top: 72px;
+            max-width: 753px;
         }
         .shop-sort{
             margin: 44px auto 0;
-            max-width: 949px;
+            max-width: 768px;
+            padding-left: 15px;
+            margin-right: 15px;
+            padding-right: 15px;
         }
         .baner-box{
             padding: 66px 727px 113px 44px;
@@ -680,6 +690,25 @@ footer{
         }
         .deckription-of-produckt2{
             margin-left: 0;
+        }
+        .niz{
+            margin: -3px 32px 0 15px;
+            gap: 22px;
+        }
+        .shop-item2{
+            grid-template-areas:
+        "aa."
+        ".bb"
+        "cc.";
+        max-height: 1266px;
+        grid-row-gap: 50px;
+        }
+        aside{
+            max-height: 1352px;
+        }
+        .info-3{
+            opacity: 0;
+            position: absolute;
         }
     }
 
