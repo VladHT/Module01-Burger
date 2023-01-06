@@ -710,6 +710,10 @@ footer{
             opacity: 0;
             position: absolute;
         }
+        .button-up{
+            left: 630px;
+            right: 390px;
+        }
     }
 
     
