@@ -733,6 +733,9 @@ footer{
                 margin-right: 6px;
                 margin-top: -3px;
             }
+            .info-1 >.info-3-mini a:hover{
+                color: white;
+            }
             .button-up{
                 left: 650px;
             }
