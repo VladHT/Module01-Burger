@@ -32,6 +32,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     width: 176px;
+    min-width: 116px;
     height: 56px;
 }
 .header nav{
@@ -649,7 +650,7 @@ footer{
             grid-template: "a b"
                            "c d"
                            "e f";
-            max-height: 2046px;
+            max-height: 2619px;
             max-width: 994px;
             margin: 34px 15px 89px 15px;
             justify-content: space-between;
@@ -658,13 +659,13 @@ footer{
         .shop-item{
             margin-right: 0;
             max-width: 470px;
-            max-height: 632px;
+            max-height: 823px;
         }
         .shop-img{
             margin-right: 0;
-            background-position: 0 center;
-            max-width: 380px;
-            height: 482px;
+            background-position: center;
+            width: 470px;
+            height: 672px;
         }
         .baner{
             margin: 72px auto 0;
@@ -717,6 +718,7 @@ footer{
             }
             .shop-img{
                 max-width: 361px;
+                max-height: 516px;
             }
             .info-3{
                 display: none;
@@ -741,4 +743,207 @@ footer{
             }
     }
 
-    
+    @media (min-width: 766px){
+        .header-burger{
+            display: none;
+        }
+    }
+
+    @media (max-width: 765px){
+        nav{
+            display: none;
+        }
+        .header{
+            justify-content: flex-start;
+        }
+        .burger{
+            margin-right: 20px;
+        }
+        .button{
+            margin-left: 359px;
+        }
+        .shop-sort{
+            margin: 44px 15px 0;
+            max-width: 990px;
+            padding: 0;
+        }
+        .shop-img{
+            max-width: 311px;
+            max-height: 445px;
+            background-position: center;
+        }
+        .bg{
+            padding: 50px 102px;
+        }
+        .button-up{
+            left: 550px;
+        }
+        .baner{
+            margin-top: 65px;
+        }
+        .baner-box{
+            padding: 66px 187px 83px 34px;
+        }
+    }
+
+    @media (max-width: 376px){
+        .button-up{
+            left: 260px;
+        }
+        .header-logo{
+            min-width: 116px;
+            height: 37px;
+        }
+        .button{
+            margin-left: 70px;
+        }
+        .baner-text{
+            max-width: 242px;
+        }
+        .baner-text br{
+            display: none;
+        }
+        .container-2{
+            background-position: -137px center;
+        }
+        .bg{
+            background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(../images/modal-header.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 55px 21px;
+        }
+        .title{
+            font-size: 38px;
+        }
+        .beadcrumbs{
+            font-size: 14px;
+        }
+        .desciption{
+            font-size: 12px;
+        }
+        .baner-box{
+            padding: 35px 28px 34px 15px;
+            min-width: 302px;
+        }
+        .shop-img{
+            max-width: 165px;
+            max-height: 238px;
+        }
+        .deckription-of-produckt2, .deckription-of-produckt{
+            font-size: 13px;
+            line-height: 28px;
+            margin-top: 7px;
+        }
+        .deckription-of-produckt2 span, .deckription-of-produckt span{
+            font-size: 16px;
+        }
+        .shop-text button{
+            padding: 10px 31px;
+        }
+        .shop-item{
+            margin-bottom: 24px;
+        }
+        .shop-title{
+            font-size: 27px;
+            margin: 14.5px 0;
+        }
+        .shop-sort{
+            align-items: center;
+            margin: 50px 15px 0;
+        }
+        .sort{
+            font-size: 12px;
+            padding: 7.5px 31px 7.5px 15px;
+            background-position: 102px 12px;
+            margin: 0;
+        }
+        .shop{
+            margin-top: 24px;
+            margin-bottom: 50px;
+        }
+        .baner{
+            margin:32px auto 0;
+        }
+        .dop-info{
+            font-size: 20px;
+            margin-top: 50px;
+        }
+        footer{
+            margin-top: 61px;
+        }
+        .info-2{
+            display: none;
+        }
+        .info-1 h2{
+            font-size: 18px;
+        }
+        .info-1 ul:first-child{
+            font-size: 15px;
+        }
+        .info-1 p{
+            font-size: 15px;
+        }
+        .niz{
+            padding-top: 61px;
+            margin: 0 50px 0 13px;
+            flex-direction: column;
+        }
+    }
+    @media (min-width: 376px){
+        .info-2-hiden{
+            display: none;
+        }
+    }
+
+    /* Modal */
+
+    .burger{
+        height: 22px;
+        width: 34px;
+        background-image: url(../images/Menu-select.svg);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .flex-rovn{
+        display: flex;
+        align-items: center;
+    }
+    .modal{
+         background-color: #FFF8DC;
+         max-width: 500px;
+         text-align: center;
+         position: absolute;
+         position: 0;
+         left: 0;
+         right: 0;
+         top: -400px;
+         margin: 20px auto 0;
+         padding: 40px 30px;
+         box-sizing: border-box;
+         transition: .5s;
+    }
+    .modal .header-nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+        margin: 0;
+    }
+    .modal-close{
+        width: 22px;
+        height: 22px;
+        background-image: url(../images/close.svg);
+        background-size: contain;
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+   
