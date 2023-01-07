@@ -616,14 +616,20 @@ footer{
 
     /* Responsive */
 
-    @media (max-width:1000px){
+    @media (min-width:1024px){
+        .info-3-mini{
+            display: none;
+        }
+    }
+
+    @media (max-width:1024px){
         .container{
-            max-width: 923px;
+            max-width: 994px;
             margin: 0 15px;
+            padding: 0;
         }
         .container-2{
-            max-width: 953px;
-            margin: 0 15px;
+            max-width: 994px;
             background-position: -80px center;
         }
         .header-logo{
@@ -644,8 +650,8 @@ footer{
                            "c d"
                            "e f";
             max-height: 2046px;
-            max-width: 768px;
-            margin: 34px 32px 89px 15px;
+            max-width: 994px;
+            margin: 34px 15px 89px 15px;
             justify-content: space-between;
             grid-column-gap: 15px;
         }
@@ -657,22 +663,19 @@ footer{
         .shop-img{
             margin-right: 0;
             background-position: 0 center;
-            width: 346px;
+            max-width: 380px;
             height: 482px;
         }
         .baner{
-            margin-top: 72px;
-            max-width: 753px;
+            margin: 72px auto 0;
+            max-width: 994px;
         }
         .shop-sort{
             margin: 44px auto 0;
-            max-width: 768px;
-            padding-left: 15px;
-            margin-right: 15px;
-            padding-right: 15px;
+            max-width: 990px;
         }
         .baner-box{
-            padding: 66px 727px 113px 44px;
+            padding: 66px 27px 113px 44px;
         }
         .shop-text{
             display: flex;
@@ -696,24 +699,43 @@ footer{
             gap: 22px;
         }
         .shop-item2{
-            grid-template-areas:
-        "aa."
-        ".bb"
-        "cc.";
-        max-height: 1266px;
-        grid-row-gap: 50px;
+            max-height: 1266px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            grid-row-gap: 50px;
         }
         aside{
             max-height: 1352px;
         }
-        .info-3{
-            opacity: 0;
-            position: absolute;
-        }
         .button-up{
-            left: 630px;
-            right: 390px;
+            left: 912px;
         }
+    }
+        @media (max-width:768px){
+            .container-2{
+                margin: 0 15px;
+            }
+            .shop-img{
+                max-width: 361px;
+            }
+            .info-3{
+                display: none;
+            }
+            .info-1 >.info-3-mini a{
+                color: #FBB731;
+                text-decoration: none;
+                font-weight: 800;
+                font-size: 20px;
+                line-height: 1.91;
+                list-style-type: none;
+                padding-left: 0;
+                margin: 0px;
+                margin-right: 6px;
+                margin-top: -3px;
+            }
+            .button-up{
+                left: 650px;
+            }
     }
 
     
