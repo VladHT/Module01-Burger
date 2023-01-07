@@ -616,7 +616,7 @@ footer{
 
     /* Responsive */
 
-    @media (min-width:1024px){
+    @media (min-width:769px){
         .info-3-mini{
             display: none;
         }
