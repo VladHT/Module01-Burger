@@ -214,18 +214,19 @@ header{
     border: solid 1px;
 }
 .shop{
-    display: grid;
+    display: flex;
     max-width: 1180px;
     max-height: 1208px;
+    gap: 15px;
     margin: auto;
     grid-template-areas:
         "a b c"
         "d e f";
+    flex-wrap: wrap;
 }
 .shop-item{
     max-width: 380px;
     max-height: 579px;
-    margin-right: 20px;
     margin-bottom: 50px;
 }
 .shop-img{
@@ -657,7 +658,7 @@ footer{
         }
         .shop-item{
             margin-right: 0;
-            max-width: 470px;
+            max-width: 467px;
             max-height: 823px;
         }
         .shop-img{
@@ -716,8 +717,11 @@ footer{
                 margin: 0 15px;
             }
             .shop-img{
-                max-width: 361px;
+                max-width: 346px;
                 max-height: 516px;
+            }
+            .shop{
+                margin: 34px 0;
             }
             .info-3{
                 display: none;
