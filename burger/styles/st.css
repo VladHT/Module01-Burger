@@ -680,6 +680,7 @@ footer{
         .shop-sort{
             margin: 44px auto 0;
             max-width: 990px;
+            gap: 500px;
         }
         .baner-box{
             padding: 66px 27px 113px 44px;
@@ -716,7 +717,7 @@ footer{
         }
         .button-up{
             left: 905px;
-            right: 198px;
+            right: 20px;
         }
     }
         @media (max-width:768px){
@@ -750,7 +751,10 @@ footer{
             }
             .button-up{
                 left: 650px;
-                right: 451px;
+                right: 20px;
+            }
+            .shop-sort{
+                gap: 20px;
             }
     }
 
@@ -777,6 +781,7 @@ footer{
             margin: 44px 15px 0;
             max-width: 990px;
             padding: 0;
+            gap: 20px;
         }
         .shop-img{
             max-width: 311px;
@@ -788,7 +793,7 @@ footer{
         }
         .button-up{
             left: 550px;
-            right: 565px;
+            right: 20px;
         }
         .baner{
             margin-top: 65px;
@@ -801,7 +806,7 @@ footer{
     @media (max-width: 376px){
         .button-up{
             left: 260px;
-            right: 646px;
+            right: 20px;
         }
         .header-logo{
             min-width: 116px;
@@ -864,6 +869,7 @@ footer{
         .shop-sort{
             align-items: center;
             margin: 50px 15px 0;
+            gap: 20px;
         }
         .sort{
             font-size: 12px;
