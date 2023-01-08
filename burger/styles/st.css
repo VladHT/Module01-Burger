@@ -715,7 +715,8 @@ footer{
             max-height: 1352px;
         }
         .button-up{
-            left: 912px;
+            left: 905px;
+            right: 198px;
         }
     }
         @media (max-width:768px){
@@ -749,6 +750,7 @@ footer{
             }
             .button-up{
                 left: 650px;
+                right: 451px;
             }
     }
 
@@ -786,6 +788,7 @@ footer{
         }
         .button-up{
             left: 550px;
+            right: 565px;
         }
         .baner{
             margin-top: 65px;
@@ -798,6 +801,7 @@ footer{
     @media (max-width: 376px){
         .button-up{
             left: 260px;
+            right: 646px;
         }
         .header-logo{
             min-width: 116px;
