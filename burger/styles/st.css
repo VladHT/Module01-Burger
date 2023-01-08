@@ -217,12 +217,18 @@ header{
     display: flex;
     max-width: 1180px;
     max-height: 1208px;
-    gap: 15px;
+    column-gap: 20px;
     margin: auto;
     grid-template-areas:
         "a b c"
         "d e f";
     flex-wrap: wrap;
+}
+.shop-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 9px;
 }
 .shop-item{
     max-width: 380px;
@@ -240,7 +246,7 @@ header{
     display: flex;
     max-width: 1182px;
     margin: 66px auto 0px;
-    padding-left: 4px;
+    gap: 697px;
     text-transform: uppercase;
     justify-content: space-between;
 }
@@ -279,20 +285,19 @@ h3{
     font-size: 30px;
     color: #1B2A49;
 }
-.deckription-of-produckt span{
+.shop-text span{
     font-weight: 700;
     font-size: 20px;
     color: #979797;
 }
 .shop-text button{
-    margin-top: 21px;
-    margin-left: 114px;
     background: rgb(251, 183, 49);
     border-radius: 5px;
-    padding: 9px 36px 8px 27px;
+    padding: 10px 36px 8px 27px;
     border: 1px solid rgb(255, 255, 255);
     font-weight: 700;
     font-size: 14px;
+    margin-top: 12px;
 }
 .bye{
     display: flex;
@@ -340,10 +345,11 @@ aside{
     color: #1B2A49;
     margin-left: -18px;
 }
-.deckription-of-produckt2 span{
-    font-weight: 700;
-    font-size: 20px;
-    color: #979797;
+.prod span{
+    margin-right: 17px;
+}
+.prod button{
+    margin-right: 18px;
 }
 .niz{
     display: flex;
@@ -354,7 +360,7 @@ aside{
     max-width: 1180px;
 }
 footer{
-    margin-top: 142px;
+    margin-top: 143px;
     max-width: 100%;
     background-color: #1E2F40;
 }
